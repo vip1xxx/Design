@@ -91,17 +91,17 @@ body, html {
 
 .order-service {
     width: 220px;
-        display: block; /* Кнопка займет всю ширину родительского элемента */
-        margin: 20px auto 0; /* Отступ сверху (20px), автоцентрирование */
-        border-radius: 20px;
-        background-color: transparent;
-        color: black;
-        padding: 10px 20px;
-        border: 2px solid #75b488;
-        cursor: pointer;
-        transition: background-color 0.3s ease, color 0.3s ease;
-        text-decoration: none;
-    }
+    display: block; /* Кнопка займет всю ширину родительского элемента */
+    margin: 20px auto 0; /* Отступ сверху (20px), автоцентрирование */
+    border-radius: 20px;
+    background-color: transparent;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid #75b488;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
 
 
 
@@ -179,7 +179,7 @@ button:hover {
     object-fit: contain;
     cursor: pointer;
     margin: 25px auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
 }
 
 .close, .close1, .close2, .close3, .close4, .close5 {
@@ -297,6 +297,7 @@ html {
     height: 50px;
     margin-top: 20px;
 }
+
 
 
 
