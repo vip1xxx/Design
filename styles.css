@@ -1,0 +1,303 @@
+/* styles.css */
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "PT Sans", sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: #D6E2E0;
+}
+
+.header1 {
+    width: 100%;
+    height: 15vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.foto1 {
+    width: 100%;
+    height: 100vh;
+}
+
+.menu {
+    margin-right: 70px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.9s ease;
+    font-size: 18px;
+}
+
+.menu:hover {
+    color: darkseagreen;
+}
+.posluga h1{
+    margin-top: 250px;
+}
+.posluga {
+    width: 100%;
+    height: 15vh;
+    background-color: white;
+    text-align: center;
+    font-size: 17px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#poslugi p{
+    margin: 0 auto; /* Центрирование абзацев на странице */
+    text-align: center;
+    line-height: 1.6; /* Межстрочный интервал для улучшения читаемости */
+}
+
+#poslugi{
+    width: 100%;
+    height: 85vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.block {
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.block:hover {
+    transform: scale(1.1);
+}
+
+.block h2 {
+    font-size: 21px;
+    font-family: "Raleway", sans-serif;
+}
+
+.order-service {
+    width: 220px;
+        display: block; /* Кнопка займет всю ширину родительского элемента */
+        margin: 20px auto 0; /* Отступ сверху (20px), автоцентрирование */
+        border-radius: 20px;
+        background-color: transparent;
+        color: black;
+        padding: 10px 20px;
+        border: 2px solid #75b488;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        text-decoration: none;
+    }
+
+
+
+button:hover {
+
+    color: #509130;
+}
+.block p {
+    font-size: 20px;
+}
+
+
+.galery, .galery1, .galery2, .galery3, .galery4, .galery5 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+@keyframes border-fill {
+    0% {
+        border-color: white; /* Начальный цвет бордера */
+    }
+    100% {
+        border-color: #216234; /* Конечный цвет бордера */
+    }
+}
+
+.show-gallery, .show-gallery1, .show-gallery2, .show-gallery3, .show-gallery4, .show-gallery5 {
+    padding: 10px 20px;
+    background-color: rgba(96, 175, 80, 0); /* Полностью прозрачный фон */
+    color: white;
+    border: 2px solid transparent; /* Прозрачный бордер */
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: color 0.3s ease-in-out; /* Убираем переход для бордера */
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 50px;
+}
+
+.show-gallery:hover, .show-gallery1:hover, .show-gallery2:hover, .show-gallery3:hover, .show-gallery4:hover, .show-gallery5:hover {
+    animation: border-fill 1s forwards; /* Запускаем анимацию при наведении */
+    color: white; /* Цвет текста остается белым */
+}
+
+
+.modal, .modal1, .modal2, .modal3, .modal4, .modal5 {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-y: auto;
+}
+
+.modal-content, .modal-content1, .modal-content2, .modal-content3, .modal-content4, .modal-content5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.modal-img, .modal1-img, .modal2-img, .modal3-img, .modal4-img, .modal5-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    cursor: pointer;
+    margin: 25px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+.close, .close1, .close2, .close3, .close4, .close5 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.proect1{
+    width: 85vw;
+    height: 85vh;
+
+}
+
+.modal-content img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    cursor: pointer;
+    margin: 25px auto;
+}
+.modal-content1 img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    cursor: pointer;
+    margin: 25px auto;
+}
+.modal-content2 img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    cursor: pointer;
+    margin: 25px auto;
+}
+.modal-content3 img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    cursor: pointer;
+    margin: 25px auto;
+}
+.modal-content4 img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    cursor: pointer;
+    margin: 25px auto;
+}
+.modal-content5 img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    cursor: pointer;
+    margin: 25px auto;
+}
+/* ... */
+
+.process {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+}
+
+.blockk {
+    flex: 0 0 calc(33.333% - 20px);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+    border: none;
+
+}
+.blockk h2 {
+    font-size: 30px;
+    color: darkseagreen;
+}
+
+.blockk p {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+html {
+    scroll-behavior: smooth;
+}
+#contact {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+#contact p{
+    font-size: 25px;
+    line-height: 1.6;
+}
+#contact a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #428527;
+
+}
+.inst{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+
+
+
