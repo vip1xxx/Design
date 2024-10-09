@@ -297,6 +297,14 @@ html {
     height: 50px;
     margin-top: 20px;
 }
+.close {
+    color: white; /* Цвет крестика */
+    float: right; /* Положение крестика */
+    font-size: 38px; /* Размер шрифта крестика */
+    font-weight: bold; /* Жирный шрифт */
+    cursor: pointer; /* Указатель при наведении */
+    position: fixed;
+}
 
 
 
