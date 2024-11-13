@@ -1,5 +1,8 @@
 /* styles.css */
 
+html {
+    scroll-behavior: smooth;
+}
 
 body, html {
     margin: 0;
@@ -190,11 +193,6 @@ button:hover {
     font-size: 30px;
     cursor: pointer;
 }
-.proect1{
-    width: 85vw;
-    height: 85vh;
-
-}
 
 .modal-content img {
     max-width: 90vw;
@@ -293,8 +291,8 @@ html {
 
 }
 .inst{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     margin-top: 20px;
 }
 .close {
@@ -388,8 +386,17 @@ html {
     animation: border-fill 1s forwards;
     color: white;
 }
-.posluga
 
+
+
+
+.proect1 {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: cover; /* Обеспечивает сохранение пропорций */
+    object-position: center; /* Центрирует изображение */
+}
 
 
 
